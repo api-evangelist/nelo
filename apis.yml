@@ -1,7 +1,24 @@
 aid: nelo
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/nelo.png
 name: Nelo
-description: 'Nelo is a company surfaced as a portfolio company of homebrew and added to the API Evangelist
-  network as a stub for enrichment. Sector: fintech. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Nelo is a Mexican fintech offering consumer credit that lets shoppers buy now and
+  pay later in bi-weekly installments (quincenas). Its mobile app (iOS and Android) provides instant
+  credit approval, an in-app marketplace (Tienda Nelo), bill payment for utilities such as CFE, water,
+  gas and internet, phone recharges, cash withdrawals, and a premium Nelo VIP tier with a physical
+  credit card. Backed by Homebrew, Nelo operates primarily as a consumer mobile product and, as of this
+  enrichment pass, publishes no public developer API, developer portal, or API documentation. Sector:
+  fintech / buy-now-pay-later (BNPL).'
 url: https://raw.githubusercontent.com/api-evangelist/nelo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Fintech
+- BNPL
+- Consumer Credit
+- Payments
+- Mexico
+- Mobile App
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +44,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/nelo-domain-security.yml
 - type: Website
   url: https://www.nelo.mx
+- type: Support
+  url: https://nelo.mx/es/preguntas-frecuentes
+- type: TermsOfService
+  url: https://nelo.mx/es/legal/terms
+- type: PrivacyPolicy
+  url: https://nelo.mx/es/legal/privacy
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 0
+  pass: local-v1
